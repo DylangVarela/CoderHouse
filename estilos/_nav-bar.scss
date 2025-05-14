@@ -1,0 +1,59 @@
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: $navbar-bg;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  div {
+    width: 100%;
+    display: block;
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      li {
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        a {
+          text-decoration: none;
+          color: $font-color;
+          margin: 3px;
+        }
+        a:hover {
+          background-color: $link-hover;
+          transform: scale(1.05);
+        }
+        .carrito {
+          border: 2px solid black;
+          border-radius: 100%;
+          width: 5vh;
+          display: flex;
+          align-items: center;
+          
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    li{
+      display: flex;
+      justify-content:center;
+      margin: 5px;
+      .carrito{
+        width: 10%;
+        height: 3vh;
+      }
+    }
+  }
+}

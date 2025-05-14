@@ -1,15 +1,10 @@
 // Variables
-// $primary-color: #333;
-// $secondary-color: #555;
-$link-color: #fff;
-$button-bg: #000;
-$button-hover-bg: #444;
-$breakpoint-mobile: 768px;
+
 
 // Sección de productos
 section {
   padding: 4rem 0;
-  background-color: $primary-color;
+  background-color: $secondary-color;
 
   > div {
     display: flex;
@@ -41,8 +36,7 @@ section {
           img {
             width: 100%;
             height: auto;
-            margin-bottom: 1rem;
-            border-radius: 5px;
+            border-radius: 10px;
             transition: transform 0.3s ease;
 
             &:hover {
