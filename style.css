@@ -1,17 +1,286 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 14 | @import "header";
- *    |         ^^^^^^^^
- *    '
- *   estilos.scss 14:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 14 \2502  @import \"header\";\d\a    \2502          ^^^^^^^^\a    \2575 \a   estilos.scss 14:9  root stylesheet";
+@import "animate.css";
+body {
+  background-color: rgb(0, 117, 0);
 }
+
+header {
+  background-color: #7dcea0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.title {
+  background-color: #7dcea0;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 0;
+  margin: 0;
+  text-align: center;
+}
+.title a {
+  text-decoration: none;
+  display: flex;
+  justify-content: left;
+}
+.title a #logo {
+  border-radius: 100%;
+  border: solid black 1px;
+  margin: 1rem;
+  width: 10vh;
+  transition: transform 0.3s ease;
+}
+.title a #logo:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  display: block;
+  font-size: 20px;
+  justify-content: left;
+  text-align: center;
+  margin: 1rem;
+  padding-top: 1.5rem;
+}
+
+.carro-login-registro {
+  background-color: #7dcea0;
+  display: flex;
+  justify-content: start;
+  align-content: center;
+}
+.carro-login-registro ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  white-space: nowrap;
+}
+.carro-login-registro ul li {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 5px;
+  padding: 2vh;
+}
+.carro-login-registro ul li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header .title .logo {
+    display: flex;
+    justify-content: center;
+    width: 10vh;
+    font-size: 10px;
+    transition: transform 0.3 ease;
+  }
+  header .title:hover {
+    transform: scale(1.05);
+  }
+  header .title h1 {
+    font-size: 5vh;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #73c6b6;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+}
+.nav-bar div {
+  width: 100%;
+  display: block;
+}
+.nav-bar div #menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.nav-bar div #menu li {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar div #menu li a {
+  text-decoration: none;
+  color: #23695b;
+  margin: 3px;
+}
+.nav-bar div #menu li a:hover {
+  background-color: #a2d9ce;
+  transform: scale(1.05);
+}
+.nav-bar div #menu li .carrito {
+  border: 2px solid black;
+  border-radius: 100%;
+  width: 5vh;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-bar li {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+  }
+  .nav-bar li .carrito {
+    width: 10%;
+    height: 3vh;
+  }
+}
+#seccion {
+  padding: 4rem 0;
+  background-color: #76d7c4;
+}
+#seccion > div {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+#seccion > div > div {
+  background-color: #76d7c4;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#seccion > div > div > div {
+  padding: 1rem;
+}
+#seccion > div > div > div h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+#seccion > div > div > div a {
+  display: inline-block;
+  text-decoration: none;
+}
+#seccion > div > div > div a img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+#seccion > div > div > div a img:hover {
+  transform: scale(1.05);
+}
+#seccion > div > div > div a:last-of-type {
+  background-color: #08947d;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+#seccion > div > div > div a:last-of-type:hover {
+  background-color: #007054;
+}
+
+@media (max-width: 768px) {
+  section > div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#carrito-body {
+  background-color: #76d7c4;
+}
+
+#titulo-carrito {
+  display: flex;
+  justify-content: center;
+  font-size: 5vh;
+  background-color: #76d7c4;
+  margin: 0;
+  height: 100%;
+  padding-top: 10px;
+}
+
+#productos {
+  background-color: #76d7c4;
+  display: flex;
+  justify-content: center;
+  gap: 10vh;
+  max-height: max-content;
+  padding: 2%;
+}
+#productos article {
+  margin: 10px;
+  justify-content: center;
+  row-gap: 2vh;
+  box-shadow: 0 8px 16px rgb(55, 112, 114);
+  border-radius: 10%;
+  text-align: center;
+  background-color: rgb(4, 163, 155);
+}
+#productos article h5 {
+  font-size: 30px;
+}
+#productos article p {
+  font-style: bold;
+  text-align: center;
+}
+#productos article .boton {
+  background-color: rgb(4, 163, 155);
+  color: #fff;
+  border: none;
+  box-shadow: 0 3px 9px rgb(55, 114, 101);
+  border-radius: 10%;
+}
+
+.lista-carrito {
+  background-color: #76d7c4;
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+  width: 100%;
+  margin-top: 5rem;
+  border: 1px solid black;
+}
+.lista-carrito #total {
+  font-size: 5vh;
+}
+.lista-carrito h3 {
+  text-align: center;
+  display: flex;
+}
+.lista-carrito #vaciar-carrito {
+  background-color: rgb(4, 140, 158);
+  border-radius: 10%;
+  box-shadow: 0 3px 9px rgb(55, 114, 101);
+  border: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

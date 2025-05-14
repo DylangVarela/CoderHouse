@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body>
+<body id="carrito-body">
   <!-- HEADER -->
   <header>
     <div class="title">
@@ -36,7 +36,7 @@
   <main>
     <nav class="nav-bar">
       <div>
-        <ul class="menu">
+        <ul id="menu" class="animate__animated animate__backInLeft">
           <li>
             <a href="/shop.html">SHOP</a>
           </li>
@@ -55,59 +55,45 @@
       </div>
     </nav>
 
-    <h2>Carrito de Compras</h2>
+    <h2 id="titulo-carrito" class="animate__animated animate__fadeIn">Carrito de Compras</h2>
     <!-- Productos disponibles -->
-    <div class="row g-4 mb-5">
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body text-center">
-            <h5 class="card-title">Adidas Predator Verdes</h5>
-            <p class="card-text">Precio: $80.000</p>
-            <button class="btn btn-dark agregar-carrito" data-nombre="Adidas Predator Verdes" data-precio="80000">
-              Agregar
-            </button>
-          </div>
-        </div>
-      </div>
+    <div id="productos" class="animate__animated animate__fadeIn">
+      <article>
+        <h5>Adidas Predator Verdes</h5>
+        <p>Precio: $80.000</p>
+        <button class="boton" data-nombre="Adidas Predator Verdes" data-precio="80000">
+          Agregar
+        </button>
+      </article>
+    
+    <article>
+      <h5>Adidas Predator Morados</h5>
+      <p>Precio: $90.000</p>
+      <button class="boton" data-nombre="Adidas Predator Morados" data-precio="90000">
+        Agregar
+      </button>
+    </article>
 
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body text-center">
-            <h5 class="card-title">Adidas Predator Morados</h5>
-            <p class="card-text">Precio: $90.000</p>
-            <button class="btn btn-dark agregar-carrito" data-nombre="Adidas Predator Morados" data-precio="90000">
-              Agregar
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body text-center">
-            <h5 class="card-title">Reusch Pure Contact</h5>
-            <p class="card-text">Precio: $70.000</p>
-            <button class="btn btn-dark agregar-carrito" data-nombre="Reusch Pure Contact" data-precio="70000">
-              Agregar
-            </button>
-          </div>
-        </div>
-      </div>
+    <article>
+      <h5>Reusch Pure Contact</h5>
+      <p>Precio: $70.000</p>
+      <button class="boton" data-nombre="Reusch Pure Contact" data-precio="70000">
+        Agregar
+      </button>
+    </article>
     </div>
-
     <!-- Lista del carrito -->
-    <div class="bg-light p-4 rounded shadow-sm">
-      <h3 class="mb-3">Tu Carrito</h3>
-      <ul id="lista-carrito" class="list-group mb-3"></ul>
-      <p id="total" class="fs-5">Total: $0</p>
-      <button id="vaciar-carrito" class="btn btn-danger">
+    <div class="lista-carrito">
+      <h3>Tu Carrito</h3>
+      <p id="total">Total: $0</p>
+      <button id="vaciar-carrito">
         Vaciar Carrito
       </button>
     </div>
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-dark text-white text-center py-4 mt-5">
+  <footer class="bg-dark text-white text-center py-1 mt-5">
     <p class="mb-1">© 2025 Goalkeeper Gloves</p>
     <p class="mb-1">Teléfono: 1123456789</p>
     <p>

@@ -11,8 +11,8 @@ $button-hover-bg: #007054;
 
 body{background-color: $body-color}
 
-@import "header";
-@import "nav-bar";
-@import "body";
+@import "./estilos/header";
+@import "./estilos/nav-bar";
+@import "./estilos/body";
 @import "animate.css";
-@import "body-carrito";
+@import "./estilos/body-carrito";
