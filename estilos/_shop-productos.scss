@@ -1,0 +1,51 @@
+#title {
+  background-color: $secondary-color;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+#container-box {
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  #box-guantes {
+    border: solid 1px red;
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .img-g {
+      width: 90%;
+      height: auto;
+      border-radius: 10%;
+    }
+    #data {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .card-text {
+        margin: 0;
+        padding-bottom: 4px;
+      }
+      .btn {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 4px 12px black;
+        padding-bottom: 5px;
+      }
+    }
+  }
+}
+.btn:hover{
+    transform: scale(1.05);
+}

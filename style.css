@@ -309,5 +309,64 @@ article:hover {
     align-items: center;
   }
 }
+#conteiner-login {
+  background-color: #76d7c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+#title {
+  background-color: #76d7c4;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+#container-box {
+  background-color: #76d7c4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#container-box #box-guantes {
+  border: solid 1px red;
+  width: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#container-box #box-guantes .img-g {
+  width: 90%;
+  height: auto;
+  border-radius: 10%;
+}
+#container-box #box-guantes #data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#container-box #box-guantes #data .card-text {
+  margin: 0;
+  padding-bottom: 4px;
+}
+#container-box #box-guantes #data .btn {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 12px black;
+  padding-bottom: 5px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
 
 /*# sourceMappingURL=style.css.map */
